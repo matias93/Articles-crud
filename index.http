@@ -1,0 +1,63 @@
+GET http://localhost:2000/
+
+###
+POST http://localhost:2000/
+
+###
+GET http://localhost:2000/user
+
+###
+POST http://localhost:2000/user
+Content-Type: application/json
+
+{
+  "name": "Caleb",
+  "email": "caleb.parra@gmail.com"
+}
+
+###
+DELETE http://localhost:2000/user/OzZ_pmECAJVa9G88jRKoc
+
+###
+PATCH http://localhost:2000/user/AuHpphzpIS1-v29RbgwGp
+Content-Type: application/json
+
+{
+  "email": "steve.luzquinos@gmail.com"
+}
+
+### Articles 
+
+GET http://localhost:2000/
+
+###
+POST http://localhost:2000/
+
+###
+GET http://localhost:2000/article
+
+###
+POST http://localhost:2000/article
+Content-Type: application/json
+
+{
+  
+  "name": "iphone 13",
+  "price": "2000",
+  "image": "foto 2",
+  "description":"Telefono Gama Alta apple"
+}
+
+###
+DELETE http://localhost:2000/article/1244567
+
+###
+PATCH http://localhost:2000/article/1234567
+Content-Type: application/json
+
+{
+  "price": "5000",
+}
+
+###
+GET http://localhost:2000/api/docs
